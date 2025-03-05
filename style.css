@@ -1,0 +1,142 @@
+/* Color Palette */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+}
+
+/* Font */
+.kumbh-sans {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.background-pattern-top {
+    width: 70em;
+    position: fixed;
+    bottom: 40%;
+    right: 50%;
+    z-index: -1;
+}
+
+.background-pattern-bottom {
+    width: 70em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+.profile-card {
+    width: 27em;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.cover-photo {
+    height: 11em;
+    background-image: url('./images/bg-pattern-card.svg');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main-profile {
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5.5em 2em 2em;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.7em;
+    margin-bottom: 0.5em;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.3);
+    margin: 2em -2em 0;
+    padding-top: 2em;
+}
+
+.strong {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+.large {
+    font-size: 1.35em;
+}
+
+.location {
+    font-size: 1em;
+}
+
+.metric-label {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2em;
+    font-family: "Kumbh Sans";
+    font-size: small;
+    color: white;
+    text-align: center;
+    z-index: 0;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+.profile-photo {
+    width: 7.5em;
+    border-radius: 50%;
+    border: 6px solid white;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 15em;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 450px) {
+    .profile-card {
+        width: 320px;
+    }
+}
