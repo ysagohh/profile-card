@@ -45,6 +45,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    filter: drop-shadow(0 2em 5rem hsla(229, 23%, 23%, 0.5));
 }
 
 .cover-photo {
@@ -59,6 +60,17 @@ body {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 5.5em 2em 2em;
+}
+
+.profile-photo {
+    width: 7.5em;
+    border-radius: 50%;
+    border: 6px solid white;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 15em;
+    z-index: 99;
 }
 
 p {
@@ -124,19 +136,14 @@ a:hover {
     color: lightgrey;
 }
 
-.profile-photo {
-    width: 7.5em;
-    border-radius: 50%;
-    border: 6px solid white;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 15em;
-    z-index: 99;
-}
-
 @media only screen and (max-width: 450px) {
     .profile-card {
         width: 320px;
     }
 }
+
+/* @media only screen and (max-height: 580px) {
+    .attribution {
+        
+    }
+} */
