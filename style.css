@@ -38,7 +38,7 @@ body {
 }
 
 .profile-card {
-    width: 27em;
+    width: min(27em, 90%);
     margin: 0;
     position: absolute;
     top: 40%;
@@ -135,15 +135,3 @@ a {
 a:hover {
     color: lightgrey;
 }
-
-@media only screen and (max-width: 450px) {
-    .profile-card {
-        width: 320px;
-    }
-}
-
-/* @media only screen and (max-height: 580px) {
-    .attribution {
-        
-    }
-} */
